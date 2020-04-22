@@ -1,0 +1,25 @@
+> firebase serve
+> firebase deploy -m "First Deployment"
+
+> firebase deploy --only hosting
+
+"headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|css|js)",
+        "header": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=1000000"
+          }
+        ]
+      },
+      {
+        "source": "404.html",
+        "header": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=300"
+          }
+        ]
+      }
+    ]
